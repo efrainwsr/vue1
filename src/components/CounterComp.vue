@@ -28,21 +28,22 @@ import {ref, computed} from 'vue'
 </script>
 
 <template>
-
-  <div class="col col-sm-2">
-    <div>
+  <div class="col-sm-3">
     <div class="card" style="width: 18rem;">
       <h5 class="card-title">{{ titulo }}</h5>
-     <img src="../../public/img.png" class="card-img-top" alt="">
-     <div class="card-body">
-       <button class="btn btn-sm btn-primary" @click="decrementar">Disminuir -</button>
-       <button @click="resetear" class="btn btn-sm btn-primary">Resetear</button>
-       <button @click="incrementar" class="btn btn-sm btn-primary">Aumentar +</button>
+      <img src="img.png" class="card-img-top" alt="">
+      <div class="card-body">
+          
+          <button type="button" @click="decrementar" class="btn btn-outline-primary btn-sm" >Disminuir -</button>
+          <button type="button" @click="resetear" class="btn btn-outline-primary btn-sm">Resetear</button>
+          <button type="button" @click="incrementar" class="btn btn-outline-primary btn-sm">Aumentar +</button>
+  
        <p :class="classCont">Contador: {{ cont }}</p>
-     </div>
+      </div>
     </div>
   </div>
-  </div>
+ 
+  
   
 
   

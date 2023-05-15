@@ -1,13 +1,16 @@
 <script setup>
   
- import CounterComp from './components/CounterComp.vue';
-// import bootstrap from 'vue'
+ import Pokemon from './components/Pokemon.vue';
+
 </script>
   
 <template>
-   <div class="row">
-      <CounterComp titulo="Contador 1" />
-      <CounterComp titulo="Contador 2" />
+   <div class="container">
+      <div class="row">
+         <div class="col col-sm-6"><Pokemon/></div>
+         <div class="col col-sm-6"><Pokemon/></div>
+     </div>
+     
    </div>
    
 </template>
